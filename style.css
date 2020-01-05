@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+}
+
+td {
+	border:  2px solid #333;
+	height:  100px;
+	width:  100px;
+	text-align:  center;
+	vertical-align:  middle;
+	font-size:  70px;
+	cursor: pointer;
+}
+
+h1 {
+	display: grid;
+	text-align: center;
+
+	color: red;
+	-webkit-animation-name: Title-animaion; 
+	-webkit-animation-duration: 40s; 
+	animation-name: Title-animaion;
+	animation-duration: 20s;
+	animation-iteration-count: 10;
+}
+
+h2 {
+	display: grid;
+	text-align: center;
+}
+
+@-webkit-keyframes Title-animaion {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+@keyframes Title-animaion {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+
+form label {
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+form input[type=radio] {
+    margin: 1em;
+    cursor: pointer;
+}
+
+form fieldset {
+    display: block;
+    opacity: 1;
+    transition: all ease 1s;  
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+table {
+	display: grid;
+	text-align: center;
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 250px;
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+.endgame {
+  width: 100%;
+  top: 120px;
+  /*background-color: #71ADF2;*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: red;
+  font-size: 3em;
+}

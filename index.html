@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kolko-krzyzyk</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<h1>Gra kółko - krzyżyk</h1>
+
+	<h2> Wybierz znacznik</h2>
+	
+<!-- 
+	<form action="#">
+      <fieldset>
+        <input type="radio" name="player-choice" id="player-choice-1" value="X" />
+        <label for="player-choice-1">X</label>
+        <input type="radio" name="player-choice" id="player-choice-2" value="O" />
+        <label for="player-choice-2">O</label>
+      </fieldset>
+    </form> -->
+
+    <form action="#">
+      <fieldset>
+        <input type="radio" name="player-choice" id="x" value="x" />
+        <label for="x">X</label>
+        <input type="radio" name="player-choice" id="o" value="o" />
+        <label for="o">O</label>
+      </fieldset>
+    </form>
+
+
+
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	
+
+	<button class="button" onClick="startGame()">Zacznij od nowa</button>
+
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
